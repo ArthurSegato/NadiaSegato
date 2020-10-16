@@ -1,0 +1,89 @@
+* {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+body,html{
+	font-family: 'Roboto', sans-serif;
+	background-color: #ecdddc;
+	color: #505f71;
+	overflow-x: hidden;
+}
+#home{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+.conteudo{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.logo{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	width: 20%;
+	padding-bottom: 8%;
+}
+.menu {
+	text-align: center;
+}
+.menu a {
+	text-decoration: none;
+	color: #505f71;
+}
+.menu span {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.seta{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	width: 35px;
+}
+.contato {
+	display: inline-block;
+	position: relative;
+	left: 100%;
+}
+.visivel {
+	position: relative;
+	left: 0px;
+}
+.icone-contato{
+	width: 50px;
+	opacity: 0;
+}
+.visivel .icone-contato{
+	transition: 0.4s;
+	left: 0%;
+	opacity: 1;
+}
+#projetos {
+	background-color: #ffffff;
+}
+.ceoHack {
+	display: none;	
+}
+.trinta-um{
+	font-size: calc(0.4464285714285714vw + 15.571428571428571px);
+}
+@media (min-width: 768px) {
+	.trinta-um{
+		font-size: calc(0.6756756756756757vw + 13.81081081081081px);
+	}
+}
+@media (min-width: 1360px) {
+	.trinta-um{
+		font-size: calc(1.4285714285714286vw + 3.5714285714285716px);
+	}
+}
+@media (min-width: 1920px) {
+	.trinta-um{
+		font-size: 31px;
+	}
+}
