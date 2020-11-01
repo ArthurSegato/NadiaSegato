@@ -12,7 +12,17 @@ Array.prototype.forEach.call(links, function(elem, index) {
         });
     }
 });
-function contato(){
-    let contato = document.getElementById('contato');
-    contato.classList.toggle("visivel");
+async function mostrarContato(){
+    document.getElementById("contato").style.zIndex = "10";
+    document.getElementById("contato").style.opacity = "1";
+    let x = window.scrollX, y = window.scrollY;
+        window.onscroll = function(){
+            window.scrollTo(x, y);
+    };
+      
+}
+function fecharContato(){
+    document.getElementById("contato").style.opacity = "0";
+    document.getElementById("contato").style.zIndex = "-10";
+    window.onscroll = function(){};
 }

@@ -39,12 +39,37 @@ body,html{
 	padding-left: 10px;
 	padding-right: 10px;
 }
+#contato{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -10;
+	background-color: #ecdddc;
+	transition: all 0.5s;
+}
+#contato a {
+	text-decoration: none;
+}
+.icones{
+	position: relative;
+	display: inline-block;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.icones img{
+	height: 40px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
 .seta{
 	position: absolute;
-	display: inline-block;
+	display: none;
 	width: 50px;
-	bottom: 5px;
 	left: 50%;
+	bottom: 10px;
 	transform: translate(-50%);
 }
 .ceoHack {
@@ -69,6 +94,9 @@ body,html{
 	.vinte{
 		font-size: calc(0.33783783783783783vw + 13.405405405405405px);
 	}
+	.icones img{
+		height: 60px;
+	}
 }
 @media (min-width: 1360px) {
 	.trinta-um{
@@ -79,6 +107,12 @@ body,html{
 	}
 	.vinte{
 		font-size: calc(0.35714285714285715vw + 13.142857142857142px);
+	}
+	.seta{
+		display: inline-block;
+	}
+	.icones img{
+		height: 80px;
 	}
 }
 @media (min-width: 1920px) {
@@ -94,6 +128,9 @@ body,html{
 	.conteudo{
 		padding-top: 20vh;
 	}
+	.icones img{
+		height: 100px;
+	}
 }
 @media (orientation: portrait) {
 	.conteudo{
@@ -101,5 +138,11 @@ body,html{
 	}
 	.logo img {
 		width: 50%;
+	}
+	.seta{
+		display: inline-block;
+	}
+	.icones img{
+		height: 5vw;
 	}
 }
