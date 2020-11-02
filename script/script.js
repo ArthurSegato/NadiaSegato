@@ -13,16 +13,11 @@ Array.prototype.forEach.call(links, function(elem, index) {
     }
 });
 async function mostrarContato(){
-    document.getElementById("contato").style.zIndex = "10";
     document.getElementById("contato").style.opacity = "1";
-    let x = window.scrollX, y = window.scrollY;
-        window.onscroll = function(){
-            window.scrollTo(x, y);
-    };
+    document.getElementById("contato").style.zIndex = "10";
       
 }
 function fecharContato(){
     document.getElementById("contato").style.opacity = "0";
     document.getElementById("contato").style.zIndex = "-10";
-    window.onscroll = function(){};
 }

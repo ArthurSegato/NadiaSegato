@@ -45,9 +45,10 @@ body,html{
 	left: 0;
 	height: 100%;
 	width: 100%;
+	opacity: 0;
 	z-index: -10;
-	background-color: #ecdddc;
 	transition: all 0.5s;
+	background-color: #ecdddc;
 }
 #contato a {
 	text-decoration: none;
@@ -72,8 +73,59 @@ body,html{
 	bottom: 10px;
 	transform: translate(-50%);
 }
+.sangria{
+	position: relative;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.fundo {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	height: 90%;
+	opacity: 0;
+}
+.imagem1 {
+	background: url("../assets/projeto.jpg");
+	background-size: cover;
+	background-position: center; 
+	background-repeat: no-repeat;
+}
+.divisao{
+	margin-bottom: 5%;
+}
+.nome-projeto{
+	background-color: #c1c9dc;
+	border-radius: 50px;
+	padding: 25px;
+	text-align: center;
+}
+.descricao-projeto{
+	text-align: justify;
+}
+.botao-projeto{
+	text-align: right;
+}
+.botao-projeto a{
+	text-decoration: none;
+	color: #505f71;
+}
+.botao-projeto a:hover{
+	color: #5f7187;
+}
 .ceoHack {
 	display: none;	
+}
+.light{
+	font-weight: 300;
+}
+.regular{
+	font-weight: 400;
+}
+.medium{
+	font-weight: 500;
 }
 .trinta-um{
 	font-size: calc(0.4464285714285714vw + 15.571428571428571px);
@@ -114,6 +166,9 @@ body,html{
 	.icones img{
 		height: 80px;
 	}
+	.fundo{
+		opacity: 1;
+	}
 }
 @media (min-width: 1920px) {
 	.trinta-um{
@@ -144,5 +199,8 @@ body,html{
 	}
 	.icones img{
 		height: 5vw;
+	}
+	.fundo{
+		opacity: 0;
 	}
 }
