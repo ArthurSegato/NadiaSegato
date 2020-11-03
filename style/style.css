@@ -78,6 +78,9 @@ body,html{
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
+.projeto {
+	margin-bottom: 15%;
+}
 .fundo {
 	position: absolute;
 	top: 50%;

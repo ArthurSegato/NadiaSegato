@@ -1,0 +1,77 @@
+*{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+body,html{
+	font-family: 'Roboto', sans-serif;
+	background-color: #ecdddc;
+	color: #505f71;
+	overflow: hidden;
+}
+a{
+	color: #505f71;
+}
+a:hover{
+	color: #65788f;
+}
+.texto{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.esquerda{
+	position: fixed;
+	width: 150vw;
+	top: 0;
+	left: -5%;
+	z-index: -10;
+}
+.direita{
+	position: fixed;
+	width: 150vw;
+	top: -10%;
+	right: -5%;
+	z-index: -10;
+	transform: rotate(180deg);
+}
+h1{
+	font-size: calc(2.455357142857143vw + 71.14285714285714px);
+}
+h2{
+	font-size: calc(0.8928571428571428vw + 23.142857142857142px);
+}
+@media (min-width: 768px) {
+	h1{
+		font-size: calc(3.209459459459459vw + 65.35135135135135px);
+	}
+	h2{
+		font-size: calc(1.0135135135135136vw + 22.216216216216218px);
+	}
+}
+@media (min-width: 1360px) {
+	h1{
+		font-size: calc(7.321428571428572vw + 9.428571428571429px);
+	}
+	h2{
+		font-size: calc(2.5vw + 2px);
+	}
+}
+@media (min-width: 1920px) {
+	h1{
+		font-size: 150px;
+	}
+	h2{
+		font-size: 50px;
+	}
+}
+@media (orientation: portrait) {
+	.esquerda{
+		width: 150vh;
+	}
+	.direita{
+		width: 150vh;
+	}
+}
