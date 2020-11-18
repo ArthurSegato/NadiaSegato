@@ -1,5 +1,1 @@
 - SEO linkado com as redes sociais
-- adicionar créditos no código
-- botar svg inline
-- Arrumar links por ser http
-- Revisar paginas de erro

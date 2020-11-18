@@ -7,6 +7,7 @@ body,html{
 	font-family: 'Roboto', sans-serif;
 	background-color: #ecdddc;
 	color: #505f71;
+	height: 100%;
 }
 #home {
 	width: 100%;
@@ -60,10 +61,10 @@ body,html{
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.icones img{
+.icones-svg{
 	height: 40px;
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 .seta{
 	position: absolute;
@@ -78,23 +79,33 @@ body,html{
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
-.projeto {
-	margin-bottom: 15%;
+.projeto-esquerda {
+	position: relative;
+	margin-bottom: 10%;
 }
-.fundo {
+.projeto-direita {
+	position: relative;
+	margin-bottom: 10%;
+}
+.imgcontainer {
 	position: absolute;
 	top: 50%;
-	left: 40%;
-	transform: translate(-50%, -50%);
+	transform: translate(0%, -50%);
 	width: 50%;
 	height: 90%;
-	opacity: 0;
+	display: none;
 }
-.imagem1 {
-	background: url("../assets/projeto.jpg");
-	background-size: cover;
-	background-position: center; 
-	background-repeat: no-repeat;
+.imgcontainer.esquerda {
+	right: 40%;
+}
+.imgcontainer.direita {
+	left: 40%;
+}
+.imgcontainer img {
+	display: inline-block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 100%;
 }
 .divisao{
 	margin-bottom: 5%;
@@ -149,8 +160,10 @@ body,html{
 	.vinte{
 		font-size: calc(0.33783783783783783vw + 13.405405405405405px);
 	}
-	.icones img{
+	.icones-svg{
 		height: 60px;
+		margin-left: 25px;
+		margin-right: 25px;
 	}
 }
 @media (min-width: 1360px) {
@@ -166,11 +179,13 @@ body,html{
 	.seta{
 		display: inline-block;
 	}
-	.icones img{
+	.icones-svg{
 		height: 80px;
+		margin-left: 30px;
+		margin-right: 30px;
 	}
-	.fundo{
-		opacity: 1;
+	.imgcontainer{
+		display: inline-block;
 	}
 }
 @media (min-width: 1920px) {
@@ -186,8 +201,10 @@ body,html{
 	.conteudo{
 		padding-top: 20vh;
 	}
-	.icones img{
+	.icones-svg{
 		height: 100px;
+		margin-left: 35px;
+		margin-right: 35px;
 	}
 }
 @media (orientation: portrait) {
@@ -200,10 +217,16 @@ body,html{
 	.seta{
 		display: inline-block;
 	}
-	.icones img{
+	.icones-svg{
 		height: 5vw;
 	}
-	.fundo{
-		opacity: 0;
+	.imgcontainer{
+		display: none;
+	}
+	.projeto-esquerda {
+		margin-bottom: 20%;
+	}
+	.projeto-direita {
+		margin-bottom: 20%;
 	}
 }
