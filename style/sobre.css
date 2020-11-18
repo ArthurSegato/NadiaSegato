@@ -1,0 +1,185 @@
+* {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+body,html{
+	font-family: 'Roboto', sans-serif;
+	background-color: #FFF;
+	color: #505f71;
+	height: 100%;
+}
+.teto{
+	background-color: #505f71;
+	width: 100%;
+	height: 20vh;
+}
+.onda{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: inline-block;
+}
+.logo{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 25%;
+	opacity: 0.25;
+	display: none;
+}
+.foto {
+	position: absolute;
+	top: 10vh;
+	left: 40%;
+	transform: translate(-50%);
+}
+.foto img{
+	width: 200px;
+	border-radius: 50%;
+}
+.espaco{
+	margin-top: 25ch;
+	margin-bottom: 5%;
+}
+.quebraLinha{
+	width: 100%;
+	height: 20vh;
+}
+h2{
+	padding-right: 10%;
+	padding-left: 10%;
+}
+p{
+	text-align: justify;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+.ceoHack{
+	display: none;
+}
+.light{
+	font-weight: 300;
+}
+.regular{
+	font-weight: 400;
+}
+.medium{
+	font-weight: 500;
+}
+.trinta-um{
+	font-size: calc(0.4464285714285714vw + 15.571428571428571px);
+}
+.vinte-oito{
+	font-size: calc(0.4464285714285714vw + 12.571428571428571px);
+}
+.vinte{
+	font-size: calc(0.4464285714285714vw + 12.571428571428571px);
+}
+@media (min-width: 768px) {
+	.trinta-um{
+		font-size: calc(0.6756756756756757vw + 13.81081081081081px);
+	}
+	.vinte-oito{
+		font-size: calc(0.6756756756756757vw + 10.81081081081081px);
+	}
+	.vinte{
+		font-size: calc(0.33783783783783783vw + 13.405405405405405px);
+	}
+	.foto img{
+		width: 250px;
+	}
+	.quebraLinha{
+		height: 15vh;
+	}
+	h2{
+		padding-right: 15%;
+		padding-left: 15%;
+	}
+	p{
+		padding-right: 15%;
+		padding-left: 15%;
+	}
+	.logo{
+		display: inline-block;
+	}
+}
+@media (min-width: 1360px) {
+	.trinta-um{
+		font-size: calc(1.4285714285714286vw + 3.5714285714285716px);
+	}
+	.vinte-oito{
+		font-size: calc(1.4285714285714286vw + 0.5714285714285714px);
+	}
+	.vinte{
+		font-size: calc(0.35714285714285715vw + 13.142857142857142px);
+	}
+	.seta{
+		display: inline-block;
+	}
+	.foto img{
+		width: 300px;
+	}
+	.espaco{
+		margin-top: 20vh;
+		margin-bottom: 5%;
+	}
+	.quebraLinha{
+		height: 10vh;
+	}
+	h2{
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+	p{
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+}
+@media (min-width: 1920px) {
+	.trinta-um{
+		font-size: 31px;
+	}
+	.vinte-oito{
+		font-size: 28px;
+	}
+	.vinte{
+		font-size: 20px;
+	}
+	.foto img{
+		width: 350px;
+	}
+	.espaco{
+		margin-top: 15%;
+		margin-bottom: 5%;
+	}
+	.quebraLinha{
+		height: 5vh;
+	}
+	h2{
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+	p{
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+}
+@media (orientation: portrait) {
+	.foto {
+		left: 50%;
+	}
+	.espaco{
+		margin-top: 25vh;
+		margin-bottom: 10%;
+	}
+	.quebraLinha{
+		height: 10vh;
+	}
+	.onda{
+		display: none;
+	}
+	.logo{
+		display: none;
+	}
+}
