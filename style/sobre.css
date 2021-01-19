@@ -29,18 +29,18 @@ body,html{
 	display: none;
 }
 .foto {
-	position: absolute;
-	top: 10vh;
-	left: 40%;
-	transform: translate(-50%);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translate(0, -25%);
 }
 .foto img{
-	width: 200px;
+	width: 30%;
 	border-radius: 50%;
 }
 .espaco{
-	margin-top: 25ch;
-	margin-bottom: 5%;
+	padding-bottom: 5%;
 }
 .quebraLinha{
 	width: 100%;
@@ -54,9 +54,6 @@ p{
 	text-align: justify;
 	padding-right: 10%;
 	padding-left: 10%;
-}
-.ceoHack{
-	display: none;
 }
 .light{
 	font-weight: 300;
@@ -87,7 +84,7 @@ p{
 		font-size: calc(0.33783783783783783vw + 13.405405405405405px);
 	}
 	.foto img{
-		width: 250px;
+		width: 25%;
 	}
 	.quebraLinha{
 		height: 15vh;
@@ -118,11 +115,7 @@ p{
 		display: inline-block;
 	}
 	.foto img{
-		width: 300px;
-	}
-	.espaco{
-		margin-top: 20vh;
-		margin-bottom: 5%;
+		width: 25%;
 	}
 	.quebraLinha{
 		height: 10vh;
@@ -147,11 +140,7 @@ p{
 		font-size: 20px;
 	}
 	.foto img{
-		width: 350px;
-	}
-	.espaco{
-		margin-top: 15%;
-		margin-bottom: 5%;
+		width: 20%;
 	}
 	.quebraLinha{
 		height: 5vh;
@@ -166,13 +155,6 @@ p{
 	}
 }
 @media (orientation: portrait) {
-	.foto {
-		left: 50%;
-	}
-	.espaco{
-		margin-top: 25vh;
-		margin-bottom: 10%;
-	}
 	.quebraLinha{
 		height: 10vh;
 	}
@@ -181,5 +163,8 @@ p{
 	}
 	.logo{
 		display: none;
+	}
+	.foto img{
+		width: 50%;
 	}
 }

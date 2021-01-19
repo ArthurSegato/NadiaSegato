@@ -81,11 +81,11 @@ body,html{
 }
 .projeto-esquerda {
 	position: relative;
-	margin-bottom: 10%;
+	padding-bottom: 10%;
 }
 .projeto-direita {
 	position: relative;
-	margin-bottom: 10%;
+	padding-bottom: 10%;
 }
 .imgcontainer {
 	position: absolute;
@@ -221,9 +221,9 @@ body,html{
 		display: none;
 	}
 	.projeto-esquerda {
-		margin-bottom: 20%;
+		padding-bottom: 20%;
 	}
 	.projeto-direita {
-		margin-bottom: 20%;
+		padding-bottom: 20%;
 	}
 }

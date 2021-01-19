@@ -1,0 +1,14 @@
+{
+    "author": "Nádia Segato",
+    "name": "Nádia Segato",
+    "short_name": "Nádia Segato",
+    "description": "",
+    "lang": "pt-BR",
+    "start_url": "https://nadiasegato.com/",
+    "icons": [
+        { "src": "favicon-512.png", "type": "image/png", "sizes": "512x512" }
+    ],
+    "theme_color": "#ebdddb",
+    "background_color": "#ebdddb",
+    "display": "standalone"
+}
